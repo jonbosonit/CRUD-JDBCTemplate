@@ -1,7 +1,6 @@
 package com.example.CRUD.JDBCTemplate.persona.aplication;
 
 import com.example.CRUD.JDBCTemplate.exception.ErrorException;
-import com.example.CRUD.JDBCTemplate.persona.domain.PersonaEntity;
 import com.example.CRUD.JDBCTemplate.persona.infrastructure.dto.input.PersonaInputDto;
 import com.example.CRUD.JDBCTemplate.persona.infrastructure.dto.output.PersonaOutputDto;
 import com.example.CRUD.JDBCTemplate.persona.infrastructure.repository.PersonaRepository;
@@ -12,20 +11,14 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Component;
 
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
 import javax.sql.DataSource;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Collectors;
 
 @Component
 public class PersonaServiceImpl implements PersonaService{
-
-    @Autowired
-    PersonaRepository personaRepository;
 
     @Autowired
     private JdbcOperations jdbc;

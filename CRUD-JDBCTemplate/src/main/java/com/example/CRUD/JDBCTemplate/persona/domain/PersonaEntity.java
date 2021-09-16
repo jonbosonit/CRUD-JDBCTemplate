@@ -36,11 +36,4 @@ public class PersonaEntity {
         if(personaInputDto.getCreated_date() != null) setCreated_date(personaInputDto.getCreated_date());
     }
 
-    /*public PersonaEntity(String user,Integer id, String password, Date created_date, String surname){
-        this.user = user;
-        this.surname = surname;
-        this.password = password;
-        this.created_date = created_date;
-        this.id = id;
-    }*/
 }
